@@ -112,7 +112,7 @@ class Agenda {
 
                 }
             }else {
-                println(cian + "Su telefono es ")
+                println(cian + "Su nombre es "+ contactos[telefono])
             }
 
         }else if (repuestaTN =="n" || repuestaTN=="N") {
@@ -131,8 +131,8 @@ class Agenda {
                     println(verde + "Introduce el número de teléfono:")
                     val telefonoCreado = readLine().toString()
 
-                    //contactos[comprobarNombre(contacto)] = telefonoCreado
-                    contactos[contacto] = telefonoCreado
+                    contactos[comprobarNombre(contacto)] = telefonoCreado
+                    //contactos[contacto] = telefonoCreado
 
                 } else {
                     println(cian + "Que tenga un buen día")
